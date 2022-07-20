@@ -10,20 +10,25 @@
 </head>
 <body>
     <header>
-        <h1>Project Tracker</h1>
+        <h1 class="col-lg-12">Project Tracker</h1>
         <p>Current Time and Date</p>
         <div id="timer"></div>
     </header>
     <main>
         <div class="container">
-            <form action="submit">
-                <h1 id="formheader">Instructions</h1>
-                <p id="instructions">Click the button to open a form and provide information for the following:</p>
-                
-
+            <form action="submit" class="col-3">
+                <div class="row"></div>
+                <h1 ib=formheader>Instructions</h1>
+                <p id=instructions>Click the button to open a form and provide information for the following:</p>
+                <input id= "formname" type="text" class="form-control" placeholder="Project Name">
+                <input id= "formtype" type="text" class="form-control" placeholder="Project Type">
+                <input id= "formdue" type="text" class="form-control" placeholder="Due Date">
+                <input id= "formrate" type="text" class="form-control" placeholder="Hourly Rate">
+                <button id= "submitBtn">Add Project</button>
             </form>
         </div>
     </main>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 <script src="./script.js"></script>
 </body>
 </html>
